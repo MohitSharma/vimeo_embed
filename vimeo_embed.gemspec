@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = VimeoEmbed::VERSION
   gem.authors       = ["Mohit Sharma"]
   gem.email         = ["developer.pht@gmail.com"]
-  gem.description   = %q{Embedding vimeo videos}
+  gem.description   = %q{Embedding vimeo simple and with title, thumbnail and description}
   gem.summary       = %q{Embedding vimeo videos}
   gem.homepage      = ""
 
@@ -16,4 +16,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  gem.add_runtime_dependency "httparty"
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "rspec"
 end

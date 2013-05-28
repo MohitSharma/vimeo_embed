@@ -1,0 +1,24 @@
+.vimeo_embed_video {
+  float:left;
+  width:100%;
+}
+.vimeo_embed_partial_video {
+  cursor:pointer;
+}
+.vimeo_embed_thumbnail {
+  float:left;
+  width:120px;
+  padding-right:10px;
+}
+.vimeo_embed_details  {
+  float:left;
+  width:300px;
+}
+.vimeo_embed_details .vimeo_embed_title {
+  float:left;
+  width:100%;
+}
+.vimeo_embed_details .vimeo_embed_description {
+  float:left;
+  width:100%;
+}
