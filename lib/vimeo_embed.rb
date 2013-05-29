@@ -15,7 +15,7 @@ module VimeoEmbed
 
   def self.vimeo_embed(data, options = {:with_description => true, :height => 200, :width => 300})
     if data.match(/https?:\/\/?(?:www\.)?vimeo\.com/)
-      data = data.gsub(/<a?[^<]+ href="[(https?:\/\/)?(www\.)?vimeo.com[^<]+]+">([^<]+)<\/a>/i, '\1')
+      data = data.gsub(/<a?[^<]+ href="https?:\/\/?(?:www\.)?vimeo\.com\/\d+"?[^<]+>([^<]+)<\/a>/i, '\1')
       if options[:with_description]
         data = data.gsub(/(https?:\/\/?(?:www\.)?vimeo\.com\/\d+)/i, thumbnail_and_description("#{$1}", options[:width], options[:height]))
       else

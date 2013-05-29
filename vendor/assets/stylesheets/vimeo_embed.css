@@ -1,6 +1,8 @@
 .vimeo_embed_video {
   float:left;
-  width:100%;
+  width:99%;
+  padding:5px;
+  border:1px solid #cccccc;
 }
 .vimeo_embed_partial_video {
   cursor:pointer;
